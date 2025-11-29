@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    #loginpage{
+      margin: 20px;
+      padding: 10px;
+      text-align:justify ;
+  
+
+    }
+
+    button{
+      background-color:rgb(21, 136, 181) ;
+      color: white;
+      border-color:rgba(0, 0, 0, 0.517);
+      
+
+    }
+  </style>
+</head>
+<body>
+  <h2>login</h2>
+  <div id="loginpage">
+    <input type="Email" placeholder="enter your email" id="email"><br><br>
+    <input type="password" id="password" placeholder="enter your password"><br><br>
+    <button type="submit" id="btn">Login</button>
+  </div>
+<script>
+  document.getElementById("loginpage").addEventListener("submit",function(e){
+    e.preventDefault();
+    const email=document.getElementById("email").value;
+    const password=document.getElementById("password").value;
+    const correctEmail="admain@gmail.com";
+    const correctPasword="1234";
+    if(email===correctEmail && password===correctPasword){
+      alert("Login Success");
+      window.location.href="admin.html";
+    
+    }else{
+      alert("Invalide email or password");
+    }
+  });
+</script>
+</body>
+
+</html>
