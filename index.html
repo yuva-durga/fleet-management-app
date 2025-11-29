@@ -24,14 +24,19 @@
 </head>
 <body>
   <h2>login</h2>
-  <div id="loginpage">
+  <form id="loginpage">
+    <label>Email:</label><br><br>
     <input type="Email" placeholder="enter your email" id="email"><br><br>
+    <label>password:</label><br><br>
     <input type="password" id="password" placeholder="enter your password"><br><br>
-    <button type="submit" id="btn">Login</button>
-  </div>
+    <button type="button" id="btn" onclick=" location.href='admin.html'">Login</button>
+  </form>
+
+</body>
 <script>
-  document.getElementById("loginpage").addEventListener("submit",function(e){
+  document.getElementById("loginpage").addEventListener("submit",function(e) {
     e.preventDefault();
+
     const email=document.getElementById("email").value;
     const password=document.getElementById("password").value;
     const correctEmail="admain@gmail.com";
@@ -45,6 +50,4 @@
     }
   });
 </script>
-</body>
-
 </html>
