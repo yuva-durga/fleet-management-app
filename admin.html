@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin page</title>
+  <style>
+    .sidebar{
+      width: 220px;
+      background-color:white;
+      padding: 20px;
+      position: fixed;
+
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome to admin page</h2>
+  <div class="sidebar">
+    <form>
+      <input type ="text" placeholder="Reg No Vechicle"><br><br>
+      <select id="category">
+        <option value="auto">Auto</option>
+        <option value="car">Car</option>
+        <option value="truck">truck</option>
+        <option value="bus">Bus</option>
+      </select><br><br>
+      <input type="Driver Name" placeholder="enter driver name" id="check"><br><br>
+      <input type="checkbox" value="available" id="check">
+      <input type="checkbox" value="unavilable">
+      <button>Add Fleet</button>
+    </form>
+
+  </div>
+ 
+  <div id="navbar">
+    <select id="categoryfilter">
+      <option vlaue="select">select</option>
+      <option value="car">car</option>
+      <option value="auto">auto</option>
+      <option value="truck">truck</option>
+      
+       
+    </select>
+
+  </div>
+  
+</body>
+</html>
